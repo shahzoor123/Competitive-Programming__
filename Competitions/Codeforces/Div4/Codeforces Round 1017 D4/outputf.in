@@ -1,0 +1,41 @@
+
+--- New Test Case ---
+p: R, s: RR
+Character: R, Count in p: 1, Count in s: 2
+Final i: 1, Final j: 2
+YES
+
+--- New Test Case ---
+p: LRLR, s: LRLR
+Character: L, Count in p: 1, Count in s: 1
+Character: R, Count in p: 1, Count in s: 1
+Character: L, Count in p: 1, Count in s: 1
+Character: R, Count in p: 1, Count in s: 1
+Final i: 4, Final j: 4
+YES
+
+--- New Test Case ---
+p: LR, s: LLLR
+Character: L, Count in p: 1, Count in s: 3
+Invalid ratio for character L
+Final i: 1, Final j: 3
+NO
+
+--- New Test Case ---
+p: LLLLLRL, s: LLLLRRLL
+Character: L, Count in p: 5, Count in s: 4
+Invalid ratio for character L
+Final i: 5, Final j: 4
+NO
+
+--- New Test Case ---
+p: LLRLRLRRL, s: LLLRLRRLLRRRL
+Character: L, Count in p: 2, Count in s: 3
+Character: R, Count in p: 1, Count in s: 1
+Character: L, Count in p: 1, Count in s: 1
+Character: R, Count in p: 1, Count in s: 2
+Character: L, Count in p: 1, Count in s: 2
+Character: R, Count in p: 2, Count in s: 3
+Character: L, Count in p: 1, Count in s: 1
+Final i: 9, Final j: 13
+YES

@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int n,k;
+    cin >> n >> k;
+
+    
+    int finalTime = (n - 1) * k + 1;
+
+    cout << finalTime << endl;
+
+
+
+
+    
+    
+}
+
+int main() {
+
+
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
+}

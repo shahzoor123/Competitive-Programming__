@@ -1,0 +1,38 @@
+Initial p: 4
+YES
+Initial p: 1
+Processing a[2] = 4 with p = 1
+Lower bound found at position 2, value: -1
+No valid transformation found, setting p = 4
+Processing a[3] = 3 with p = 4
+Failed at a[3], max transformation 3 < 4
+NO
+Initial p: 1
+Processing a[2] = 4 with p = 1
+Lower bound found at position 1, value: 6
+Transforming a[2] = 4, new p = 2
+Processing a[3] = 2 with p = 2
+Lower bound found at position 1, value: 6
+Transforming a[3] = 2, new p = 2
+Processing a[4] = 5 with p = 2
+Lower bound found at position 2, value: -1
+No valid transformation found, setting p = 5
+YES
+Initial p: -1
+Processing a[2] = 4 with p = -1
+Lower bound found at position 1, value: 4
+Transforming a[2] = 4, new p = 0
+Processing a[3] = 10 with p = 0
+Lower bound found at position 2, value: -1
+No valid transformation found, setting p = 10
+Processing a[4] = 5 with p = 10
+Failed at a[4], max transformation 5 < 10
+NO
+Initial p: -1
+Processing a[2] = 8 with p = -1
+Lower bound found at position 1, value: 8
+Transforming a[2] = 8, new p = 0
+Processing a[3] = 7 with p = 0
+Lower bound found at position 1, value: 8
+Transforming a[3] = 7, new p = 1
+YES

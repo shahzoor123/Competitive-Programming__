@@ -1,0 +1,75 @@
+Processing a new test case with n = 10
+Array: 0 1000000000 1000000000 1000000000 1000000000 1000000000 1000000000 1000000000 1000000000 589934592 
+
+Step 1:
+Current element: 0
+Maximum element so far: 0
+Sum of the prefix so far: 0
+Sum of other elements (s - mx): 0
+Good prefix found! (Sum of other elements == Maximum element)
+
+Step 2:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 1000000000
+Sum of other elements (s - mx): 0
+Not a good prefix.
+
+Step 3:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 2000000000
+Sum of other elements (s - mx): 1000000000
+Good prefix found! (Sum of other elements == Maximum element)
+
+Step 4:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 3000000000
+Sum of other elements (s - mx): 2000000000
+Not a good prefix.
+
+Step 5:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 4000000000
+Sum of other elements (s - mx): 3000000000
+Not a good prefix.
+
+Step 6:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 5000000000
+Sum of other elements (s - mx): 4000000000
+Not a good prefix.
+
+Step 7:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 6000000000
+Sum of other elements (s - mx): 5000000000
+Not a good prefix.
+
+Step 8:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 7000000000
+Sum of other elements (s - mx): 6000000000
+Not a good prefix.
+
+Step 9:
+Current element: 1000000000
+Maximum element so far: 1000000000
+Sum of the prefix so far: 8000000000
+Sum of other elements (s - mx): 7000000000
+Not a good prefix.
+
+Step 10:
+Current element: 589934592
+Maximum element so far: 1000000000
+Sum of the prefix so far: 8589934592
+Sum of other elements (s - mx): 7589934592
+Not a good prefix.
+
+Total good prefixes for this test case: 2
+----------------------------------------

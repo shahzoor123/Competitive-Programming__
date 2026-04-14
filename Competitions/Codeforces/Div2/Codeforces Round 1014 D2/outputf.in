@@ -1,0 +1,15 @@
+Initial a: 000 b: 000
+Final a: 000 b: 000
+YES
+Initial a: 010001 b: 010111
+Swapped a[1] with b[0]: 000001 110111
+No possible swap for a[5], breaking...
+Final a: 000001 b: 110111
+NO
+Initial a: 10000 b: 01010
+Final a: 10000 b: 01010
+NO
+Initial a: 11 b: 00
+Swapped a[1] with b[0]: 10 10
+Final a: 10 b: 10
+NO

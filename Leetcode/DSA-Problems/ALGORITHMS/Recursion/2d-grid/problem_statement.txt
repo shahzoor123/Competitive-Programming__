@@ -1,0 +1,97 @@
+Problem Statement
+You are tasked with developing a function that manages the positions of cards on a two-dimensional grid. This grid simulates a task management application where each card contains notes and can be moved across the grid.
+
+The function must take three arguments:
+
+cards: A list of lists where each sub-list represents a card with three elements: card id, row index, and column index.
+
+moves: A list of lists where each sub-list represents a move with five elements: card id, row index before move, column index before move, destination row index, and destination column index.
+
+query: An integer representing the id of the card whose final position we need to determine.
+
+Requirements:
+Initial Positions: The initial positions of the cards are provided in the cards list.
+Moves: Each move involves moving a card from its current position to a new position on the grid.
+Query: The function needs to return the final position (row index and column index) of the card specified by the query id after all the moves have been executed.
+
+
+Rules:
+Card Movement: Each move specifies the card id, its initial row and column index, and its destination row and column index.
+Handling Conflicts: If moving a card to a new position causes it to overlap with another card, the overlapping card should be moved down one row.
+Propagation of Moves: If moving one card causes another card to be moved, this chain reaction should be handled until no more conflicts exist.
+
+
+Input Format:
+cards: A list of lists. Each sub-list contains three integers: [card_id, row_index, column_index].
+moves: A list of lists. Each sub-list contains five integers: [card_id, row_index_before_move, column_index_before_move, destination_row_index, destination_column_index].
+query: An integer representing the id of the card to query.
+
+
+Output Format:
+A tuple containing two integers representing the final row index and column index of the query card.
+Example:
+Input:
+
+cards = [
+    [1, 1, 0],
+    [3, 0, 0],
+    [6, 0, 1],
+    [4, 0, 2],
+    [5, 2, 0],
+    [7, 1, 1],
+    [2, 1, 2]
+]
+
+moves = [
+    [6, 0, 1, 2, 0],
+    [7, 1, 1, 0, 2]
+]
+
+query = 2
+Output:
+
+python
+Copy code
+(2, 2)
+Explanation:
+
+Initially, card 2 is at position (1, 2).
+Card 6 moves from (0, 1) to (2, 0). No conflict with card 2.
+Card 7 moves from (1, 1) to (0, 2), which conflicts with card 2's position.
+Card 2 is moved down to (2, 2) to resolve the conflict.
+
+
+Implementation Plan:
+Initialize Card Positions: Store the initial positions of all cards in a dictionary.
+Process Each Move: Update the card positions based on the moves provided. Handle conflicts by moving overlapping cards down one row.
+Output Final Position: Return the final position of the query card after processing all moves.
+Function Signature:
+
+
+python
+Copy code
+def find_final_position(cards, moves, query):
+    # Your code here
+    pass
+Example Usage:
+python
+Copy code
+cards = [
+    [1, 1, 0],
+    [3, 0, 0],
+    [6, 0, 1],
+    [4, 0, 2],
+    [5, 2, 0],
+    [7, 1, 1],
+    [2, 1, 2]
+]
+
+moves = [
+    [6, 0, 1, 2, 0],
+    [7, 1, 1, 0, 2]
+]
+
+query = 2
+
+result = find_final_position(cards, moves, query)
+print(result)  # Output should be (2, 2)
