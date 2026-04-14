@@ -1,0 +1,1 @@
+{"name":"Local: tiles","url":"e:\\My WorkSpace\\CP\\Problem from laptop\\Calico\\tiles.cpp","tests":[{"id":1775968213075,"input":"3\n5 3 128 2\n10 5 300 10\n2 2 400 5","output":"4\n1\n10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\My WorkSpace\\CP\\Problem from laptop\\Calico\\tiles.cpp","group":"local","local":true}
