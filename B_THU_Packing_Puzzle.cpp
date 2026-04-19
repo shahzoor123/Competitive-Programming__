@@ -20,18 +20,26 @@ using namespace std;
 */
 
 void solve() {
-    int n,m,k;
-    cin >> n >> m >> k;
-    
-    int mx = (n + m - 1) / m;
+    ll T, H,U;
+    cin >> T >> H >> U;
 
-    if (n - mx > k)
-        cout << "YES\n";
-    else
-        cout << "NO\n";
+    ll n = 0;
 
-    
-  
+    // For T & U
+    n += 3 * U + min(T,U);
+    T -= min(T,U);
+
+    //For H & T
+    n += 3 * H + 2 * min(2*H,T);
+    T -= min(2*H,T);
+
+    //For T & T
+    if(T){
+        n += 2 * T + 1;
+    }
+
+    cout << n << endl; 
+
 }
 
 int main() {
